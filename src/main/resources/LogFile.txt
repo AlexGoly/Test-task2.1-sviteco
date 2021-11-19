@@ -1,0 +1,13 @@
+Client:/127.0.0.1 port:50236 message: First message Server answer:FIRST_MESSAGE -> first_message
+Client:/127.0.0.1 port:50236 message: 12345 Server answer:12345 -> 12345000
+Client:/127.0.0.1 port:50236 message: command1 Server answer:Это команда 1
+Client:/127.0.0.1 port:50236 message: command10 Server answer:Это команда 10
+Client:/127.0.0.1 port:50250 message: 123 Server answer:123 -> 123000
+Client:/127.0.0.1 port:50250 message: sdf Server answer:SDF -> sdf
+Client:/127.0.0.1 port:50250 message: command8 Server answer:Это команда 8
+Client:/127.0.0.1 port:50323 message: zsc Server answer:ZSC -> zsc
+Client:/127.0.0.1 port:50323 message: 123 Server answer:123 -> 123000
+Client:/127.0.0.1 port:50323 message: command3 Server answer:Это команда 3
+Client:/127.0.0.1 port:50403 message: 123 Server answer:123 -> 123000
+Client:/127.0.0.1 port:50403 message: command3 Server answer:Это команда 3
+Client:/127.0.0.1 port:50412 message: awd Server answer:AWD -> awd
