@@ -1,0 +1,13 @@
+16:02:31.926 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52447 Message:Hello55 world  Server answer: -> HeLlO55_wOrLd
+16:02:41.720 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52447 Message:hello55  world  Server answer: -> HeLlO55_wOrLd
+16:03:19.522 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:asd  sad  a sd  ad   Server answer: -> AsD__sAd__A_sD__aD_
+16:03:54.824 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:Hello55   world  Server answer: -> HeLlO55___wOrLd
+16:04:07.960 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:Hello55  world  Server answer: -> HeLlO55__wOrLd
+16:04:23.821 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:Hello55       world  Server answer: -> HeLlO55_______wOrLd
+16:04:50.196 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:command1  Это команда 1
+16:04:58.091 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:     Server answer: -> ___
+16:05:02.218 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52454 Message:123  Server answer:123 -> 123000
+16:12:15.412 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52472 Message:command4  Это команда 4
+16:12:17.660 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52472 Message:123  Server answer:123 -> 123000
+16:12:24.853 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52472 Message:asd aASD SA  Server answer: -> AsD_aAsD_sA
+16:12:44.898 [Thread-0] INFO  ToLogFile - Client:TCPConnection:/127.0.0.1 port:52472 Message:Hello55 World  Server answer: -> HeLlO55_wOrLd

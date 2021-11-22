@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="filename">logs/LogFile.log</Property>
+        <Property name="pattern">"%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"</Property>
+    </Properties>
+    <ThresholdFilter level="trace"/>
+
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %c  %m %ex%n"/>
+            <filters>
+                <MarkerFilter marker="TO_CONSOLE" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </filters>
+        </Console>
+
+        <RandomAccessFile name="Server" fileName="${filename}">
+            <MarkerFilter marker="TO_LOG_FILE" onMatch="DENY" onMismatch="NEUTRAL"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </RandomAccessFile>
+
+        <File name="ToFileLogsForDebug" filename="logs/LogsForDebug.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+            </PatternLayout>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="ToFileLogsForDebug" level="debug"/>
+        </Root>
+
+        <AsyncLogger name="ToLogFile" level="info" additivity="false">
+            <AppenderRef ref="Server" level="INFO"/>
+        </AsyncLogger>
+
+        <Logger name="ToConsole" level="info" additivity="false">
+            <AppenderRef ref="stdout"/>
+        </Logger>
+
+    </Loggers>
+</Configuration>
